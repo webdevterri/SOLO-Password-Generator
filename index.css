@@ -9,7 +9,10 @@ html, body {
 
 body {
   background-color: #1c1c1c;
+  font-family: 'Inter', sans-serif;
   color: white;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,33 +22,76 @@ body {
   background: #1F2937;
   display: flex;
   flex-direction: column;
+  height: 80vh;
+  width: 60%;
+  padding: 55px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;  
 }
 
 h1 {
   font-size: 40px;
   font-weight: 800;
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 3rem;
 }
 
 span {
   color: #4ADF86;
+  display: block;
 }
 
 button {
   background-color: #10B981;
-  padding: 9px, 17px, 9px, 15px;
+  width: fit-content;
+  padding: 1rem 2rem;
   border-radius: 6px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 1rem;
   font-weight: 500;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
 
-hr {
-  color: #2F3E53;
+#icon-bolt {
+  margin-right: 15px;
+}
+
+.passwords-section {
+  display: flex;
+  flex-direction: column;
+  /* width: 90%; */
+  border-top: 2px solid #2F3E53;
+  padding-top: 1rem;
+}
+
+.pass-top,
+.pass-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.pass-top {
+  display: flex;
+  flex-direction: row;
 }
 
 .password {
@@ -61,5 +107,4 @@ hr {
 .password-text {
   color: #55F991;
   font-weight: 500;
-  text-align: center;
 }

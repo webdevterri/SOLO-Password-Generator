@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>Password Generator App</title>
   </head>
@@ -13,22 +19,45 @@
         <h1>Generate a <span>random password</span></h1>
         <h2>Never use an insecure password again.</h2>
         <button id="btn-generate">
-          <img src="/img/icon-LightningBolt.png" width="20" height="20" />
+          <img src="/img/icon-LightningBolt.png" id="icon-bolt" width="20" height="20" />
           Generate Passwords
         </button>
-        <hr />
         <div class="passwords-section">
-          <div class="password" id="pass1">
-            <img src="/img/icon-ellipses.png" width="20" height="5" alt="ellipses icon">
+          <div class="pass-top">
+            <div class="password" id="pass1">
+              <img
+                src="/img/icon-ellipses.png"
+                width="20"
+                height="5"
+                alt="ellipses icon"
+              />
+            </div>
+            <div class="password" id="pass2">
+              <img
+                src="/img/icon-ellipses.png"
+                width="20"
+                height="5"
+                alt="ellipses icon"
+              />
+            </div>
           </div>
-          <div class="password" id="pass2">
-            <img src="/img/icon-ellipses.png" width="20" height="5" alt="ellipses icon">
-          </div>
-          <div class="password" id="pass3">
-            <img src="/img/icon-ellipses.png" width="20" height="5" alt="ellipses icon">
-          </div>
-          <div class="password" id="pass4">
-            <img src="/img/icon-ellipses.png" width="20" height="5" alt="ellipses icon">
+          <div class="pass-bottom">
+            <div class="password" id="pass3">
+              <img
+                src="/img/icon-ellipses.png"
+                width="20"
+                height="5"
+                alt="ellipses icon"
+              />
+            </div>
+            <div class="password" id="pass4">
+              <img
+                src="/img/icon-ellipses.png"
+                width="20"
+                height="5"
+                alt="ellipses icon"
+              />
+            </div>
           </div>
         </div>
       </div>
