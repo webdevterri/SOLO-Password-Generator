@@ -74,43 +74,26 @@ const characters = [
   `M`,
 ];
 
-
-
-document.getElementById("btn-generate").addEventListener("click", generatePasswords);
+document
+  .getElementById("btn-generate")
+  .addEventListener("click", generatePasswords);
 
 function generatePasswords() {
-  let password1 = []
-  let password2 = []
-  let password3 = []
-  let password4 = []
+  let currentPass = [];
   // iterate the following 4 times
-    for (let i = 0; i < 15; i++){
-      const n = Math.floor(Math.random() * 73)
-      password1.push(characters[n])
+  for (let x = 0; x < 4; x++) {
+    for (let i = 0; i < 15; i++) {
+      const n = Math.floor(Math.random() * 73);
+      currentPass.push(characters[n]);
     }
-    document.getElementById(`pass1`).innerHTML = `<p class="password-text">${password1.join('')}</p>`
-    console.log(password1)
 
-    for (let i = 0; i < 15; i++){
-      const n = Math.floor(Math.random() * 73)
-      password2.push(characters[n])
-    }
-    document.getElementById(`pass2`).innerHTML = `<p class="password-text">${password2.join('')}</p>`
-    console.log(password2)
+    document.getElementById(
+      `pass${x + 1}`
+    ).innerHTML = `<p class="password-text">${currentPass.join("")}</p>`;
+    console.log(currentPass);
 
-    for (let i = 0; i < 15; i++){
-      const n = Math.floor(Math.random() * 73)
-      password3.push(characters[n])
-    }
-    document.getElementById(`pass3`).innerHTML = `<p class="password-text">${password3.join('')}</p>`
-    console.log(password3)
-
-    for (let i = 0; i < 15; i++){
-      const n = Math.floor(Math.random() * 73)
-      password4.push(characters[n])
-    }
-    document.getElementById(`pass4`).innerHTML = `<p class="password-text">${password4.join('')}</p>`
-    console.log(password4)
+    currentPass = [];
+  }
 }
 
 // generatePasswords()
